@@ -174,6 +174,18 @@ namespace tabClass
             mArr2[MLength] = val;
             MLength++;
         }
+        public void modifie(int pos, int val)
+        {
+            mArr[pos - 1] = val;
+        }
+        public void modify(int pos, int val)               // On donne la position et le nombre 
+        {
+            mArr[pos - 1] = val;
+        }
+        public void modify(int pos, string val)
+        {
+            mArr2[pos - 1] = val;
+        }
         public void remove(int val)
         {
             int elements_Removed = 0;
